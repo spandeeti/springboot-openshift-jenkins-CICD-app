@@ -10,6 +10,12 @@ pipeline {
  options { disableConcurrentBuilds() }
   
   stages {     
+   stage('Test App') {
+      steps {
+        sh "mvn clean build"
+      }
+    }
+    
 
     stage('Create Image Builder') {
       when {
