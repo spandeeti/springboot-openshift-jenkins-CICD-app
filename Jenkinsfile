@@ -12,7 +12,7 @@ pipeline {
   stages {     
    stage('Test App') {
       steps {
-        sh "mvn clean build"
+        sh "mvn clean install"
       }
     }
     
